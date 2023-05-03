@@ -7,3 +7,10 @@ pv
 syslinux
 nano
 reflector
+parted
+gptfdisk
+lvm2
+btrfs-progs
+arch-install-scripts
+dosfstools
+wget

@@ -1,9 +1,11 @@
 #!/bin/bash
 
-systemctl disable install.service
-rm -f /etc/systemd/system/install.service
-systemctl daemon-reload
+mkdir -p /root/alis
+cd /root/alis
+curl -sL https://raw.githubusercontent.com/USA-RedDragon/alis/master/download.sh | bash
+mv alis.mcswain.conf alis.conf
+mv alis-packages.mcswain.conf alis-packages.conf
 
-echo hello world > /root/test
+./alis.sh
 
 rm -f $0
