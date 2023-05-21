@@ -12,6 +12,8 @@ curl -fSsLo /tmp/usa-reddragon-keyring-20230501-6-any.pkg.tar.zst https://github
 pacman --noconfirm -U /tmp/usa-reddragon-keyring-20230501-6-any.pkg.tar.zst
 rm -f /tmp/usa-reddragon-keyring-20230501-6-any.pkg.tar.zst
 
-pacman --noconfirm -Sy usa-reddragon-base
+pacman --noconfirm -Sy usa-reddragon-base sdrpp-git
+yay --answerclean A --answerdiff N --answeredit N --answerupgrade Y -S visual-studio-code-bin icu69-bin xone-dkms xone-dongle-firmware protontricks proton-ge-custom-bin arduino-ide-bin find-the-command zoom plex-media-server-plexpass spotify betaflight-configurator slack-desktop ttf-ms-win11-auto
+
 
 rm -f $0
